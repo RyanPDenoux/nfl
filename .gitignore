@@ -1,0 +1,8 @@
+# QUARTERBACK_RATING
+# do not stage data files and results files for portability
+quarterback_rating/data/*
+quarterback_rating/results/*
+
+# Project files and metadata
+*.Rproj
+.Rproj*
