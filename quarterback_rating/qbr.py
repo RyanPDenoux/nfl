@@ -1,23 +1,22 @@
 import os
 import requests
 import argparse
+import numpy as np
 import pandas as pd
+
+from os.path import join
 from bs4 import BeautifulSoup
+from scipy.stats import gaussian_kde
 
-# df = pd.read_csv('qbr.csv')
-# df.columns = df.columns.str.lower()
-
-# print(df.drop(['week'], axis=1).groupby('player').mean())
-# print(df.select_dtypes(include=[np.number]).columns.tolist())
-
-# plt.barh(df.groupby('player'))
-# plt.show()
-
-WEEK = 1
+from bokeh.io import output_file, save, reset_output
+from bokeh.plotting import figure
+from bokeh.transform import factor_cmap
+from bokeh.palettes import Accent5
+from bokeh.models import ColumnDataSource
 
 
 def append_data(dataframe, flag, week):
-    files = os.listdir(os.path.join(os.getcwd(), 'data'))
+    files = os.listdir(join(os.getcwd(), 'data'))
 
     if flag == 'espn':
         if 'espn_qbr.csv' not in files:
@@ -69,6 +68,7 @@ def scrape_ESPN(week):
     page = requests.get(
         f'http://www.espn.com/nfl/qbr/_/type/player-week/week/{week}'
     )
+
     soup = BeautifulSoup(page.content, 'html.parser')
     quarterback_table = soup.find(id='my-players-table')
     table_data = quarterback_table.find_all('tr')
@@ -118,7 +118,7 @@ def scrape_ESPN(week):
         if player != df.columns[0].upper():
             df = df.append(data, ignore_index=True)
 
-    append_data(df, csv_flag, week)
+    append_data(df, 'espn', week)
 
 
 def scrape_PFR(week, year=2018):
@@ -133,6 +133,7 @@ def scrape_PFR(week, year=2018):
         'c3stat=&c3comp=gt&c3val=&c4stat=&c4comp=gt&c4val=&'
         'order_by=pass_rating&from_link=1'
     )
+
     soup = BeautifulSoup(page.content, 'html.parser')
     quarterback_table = soup.find(id='results')
 
@@ -181,7 +182,101 @@ def scrape_PFR(week, year=2018):
     df.columns.values[20] = 'yards_per_pass'
     df.columns.values[21] = 'adjusted_yards_per_pass'
 
-    append_data(df, csv_flag, week)
+    append_data(df, 'pfr', week)
+
+
+def analysis():
+    espn = pd.read_csv(join(os.getcwd(), 'data', 'espn_qbr.csv'))
+    number_of_weeks = range(1, espn['week'].max() + 1)
+    score_to_beat = 60
+
+    for week in number_of_weeks:
+        reduced = espn[espn['week'] == week]
+        reduced['is_shit'] = reduced.apply(
+            lambda x: 'Decent' if x['raw_qbr'] >= score_to_beat
+            else 'Dog Shit', axis=1
+        )
+        distribution_name = f'ESPN Week {week} Distribution'
+        hist(reduced, 'raw_qbr', 'is_shit', distribution_name)
+
+        reduced.loc[reduced['player'] == 'Andy_Dalton', 'is_shit'] = 'Dalton'
+        ratings_name = f'ESPN Week {week} Raw QBR'
+        hbar(reduced, 'raw_qbr', 'player', 'is_shit', ratings_name)
+
+    pfr = pd.read_csv(join(os.getcwd(), 'data', 'pfr_qbr.csv'))
+    number_of_weeks = range(1, pfr['week'].max() + 1)
+    score_to_beat = 100
+
+    for week in number_of_weeks:
+        reduced = pfr[pfr['week'] == week]
+        reduced = reduced[reduced['passes_attempted'] > 1]
+        reduced['is_shit'] = reduced.apply(
+            lambda x: 'Decent' if x['passer_rating'] >= score_to_beat
+            else 'Dog Shit', axis=1
+        )
+        distribution_name = f'PFR Week {week} Distribution'
+        hist(reduced, 'passer_rating', 'is_shit', distribution_name)
+
+        reduced.loc[reduced['player'] == 'Andy Dalton', 'is_shit'] = 'Dalton'
+        ratings_name = f'PFR Week {week} Passer Rating'
+        hbar(reduced, 'passer_rating', 'player', 'is_shit', ratings_name)
+
+
+def hist(data, attribute, group, name='figure'):
+    output = join(os.getcwd(), 'figures', name)
+    output_file(output + '.html')
+
+    source = ColumnDataSource(data.groupby(group))
+
+    x = np.linspace(0, data[attribute].max(), data[attribute].max())
+    pdf = gaussian_kde(data[attribute])
+
+    plot = figure(
+        title=name,
+        x_axis_label=attribute
+    )
+
+    hist, edges = np.histogram(
+        data[attribute], density=True, bins=12
+    )
+    plot.quad(
+        top=hist,
+        bottom=0,
+        left=edges[:-1],
+        right=edges[1:],
+        alpha=0.4
+    )
+
+    plot.line(x, pdf(x))
+
+    save(plot)
+    reset_output()
+
+
+def hbar(data, attribute, index, category, name=None):
+    output = join(os.getcwd(), 'figures', name)
+    output_file(output + '.html')
+
+    source = data.sort_values(by=attribute, ascending=True)
+    cmap = factor_cmap(
+        category,
+        palette=Accent5,
+        factors=sorted(source[category].unique())
+    )
+
+    plot = figure(
+        y_range=source[index],
+        title=name,
+        x_axis_label=attribute,
+        tooltips=[(attribute.replace('_', ' '), f'@{attribute}')]
+    )
+    plot.hbar(
+        y=index, right=attribute, height=0.8, source=source,
+        fill_color=cmap, line_color=cmap
+    )
+
+    save(plot)
+    reset_output()
 
 
 if __name__ == '__main__':
@@ -194,16 +289,18 @@ if __name__ == '__main__':
                         help='week of the NFL season')
     args = parser.parse_args()
 
-    if not args.week:
-        print('no week set')
-    else:
-        WEEK = args.week
+    if args.week is None:
+        if args.espn:
+            print('please select a week to scrape data from')
 
-    if args.espn:
-        csv_flag = 'espn'
-        scrape_ESPN(WEEK)
+        elif args.pfr:
+            print('please select a week to scrape data from')
+
+        else:
+            analysis()
+
+    elif args.espn:
+        scrape_ESPN(args.week)
+
     elif args.pfr:
-        csv_flag = 'pfr'
-        scrape_PFR(WEEK)
-    else:
-        print('use either the espn or pfr flags (see --help for details)')
+        scrape_PFR(args.week)
