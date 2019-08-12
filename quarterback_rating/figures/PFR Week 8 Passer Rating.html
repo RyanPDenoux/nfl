@@ -1,0 +1,83 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            <div class="bk-root" id="3d617b7d-9176-48fa-811e-8c5729c43e5f"></div>
+          
+        
+      
+      
+        <script type="application/json" id="729c0396-6052-464d-bb4d-ecbf07ab3940">
+          {"eb00dd97-d6e3-461f-a10b-b09d52713fa5":{"roots":{"references":[{"attributes":{},"id":"f3bd4a62-e39d-46d6-acee-44eccbd72a3d","type":"ResetTool"},{"attributes":{"source":{"id":"bbe9a6d5-d8bc-4b01-9546-bb9cd847470d","type":"ColumnDataSource"}},"id":"0eacb39d-759a-4393-bd19-4fb571e860fb","type":"CDSView"},{"attributes":{"plot":{"id":"eb9889c3-a5e6-4e25-ad8c-0706e45e8f8b","subtype":"Figure","type":"Plot"},"ticker":{"id":"60f2a2c5-a927-4049-9fb1-9cb74e1e43bd","type":"BasicTicker"}},"id":"917c336c-2c85-46ce-b755-eaf1141bb9ee","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"value":0.8},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"right":{"field":"passer_rating"},"y":{"field":"player"}},"id":"af5df531-5e54-49d8-9eda-bf834d1a4aaf","type":"HBar"},{"attributes":{},"id":"867da464-e16a-4a62-aed1-1e42fc963178","type":"LinearScale"},{"attributes":{"axis_label":"passer_rating","formatter":{"id":"208d947a-24c2-478d-a8b1-b9506f2ee413","type":"BasicTickFormatter"},"plot":{"id":"eb9889c3-a5e6-4e25-ad8c-0706e45e8f8b","subtype":"Figure","type":"Plot"},"ticker":{"id":"60f2a2c5-a927-4049-9fb1-9cb74e1e43bd","type":"BasicTicker"}},"id":"2e318007-c3d3-4e07-b32c-e0fd79dcf1b9","type":"LinearAxis"},{"attributes":{},"id":"c717b7ce-9504-4b6f-a38c-77b0213a79fa","type":"HelpTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"8eeefff9-1702-4d61-8be9-94c7ad4587ba","type":"PanTool"},{"id":"2b450141-cfd2-47da-ad51-0f348f718b49","type":"WheelZoomTool"},{"id":"99981ada-85dc-4fbe-a82b-89ca9ad729e6","type":"BoxZoomTool"},{"id":"174a1c08-7dec-446a-ac96-c3081033d633","type":"SaveTool"},{"id":"f3bd4a62-e39d-46d6-acee-44eccbd72a3d","type":"ResetTool"},{"id":"c717b7ce-9504-4b6f-a38c-77b0213a79fa","type":"HelpTool"},{"id":"d28f9390-b597-409f-ae39-3c8fa9be3291","type":"HoverTool"}]},"id":"f44cf70e-f071-46e9-9a4c-b6d88814dc77","type":"Toolbar"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"d5764534-1426-4d49-88df-ec9c7b97d90b","type":"BoxAnnotation"},{"attributes":{"data_source":{"id":"bbe9a6d5-d8bc-4b01-9546-bb9cd847470d","type":"ColumnDataSource"},"glyph":{"id":"69b25652-282c-4e44-b125-286407dadcd1","type":"HBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"af5df531-5e54-49d8-9eda-bf834d1a4aaf","type":"HBar"},"selection_glyph":null,"view":{"id":"0eacb39d-759a-4393-bd19-4fb571e860fb","type":"CDSView"}},"id":"fd30e853-2f28-4ce0-8c0a-4cabbfff957f","type":"GlyphRenderer"},{"attributes":{},"id":"8eeefff9-1702-4d61-8be9-94c7ad4587ba","type":"PanTool"},{"attributes":{"fill_color":{"field":"is_shit","transform":{"id":"00fbfc4d-a8ae-4b85-86ec-3654c9643db7","type":"CategoricalColorMapper"}},"height":{"value":0.8},"line_color":{"field":"is_shit","transform":{"id":"00fbfc4d-a8ae-4b85-86ec-3654c9643db7","type":"CategoricalColorMapper"}},"right":{"field":"passer_rating"},"y":{"field":"player"}},"id":"69b25652-282c-4e44-b125-286407dadcd1","type":"HBar"},{"attributes":{},"id":"2b450141-cfd2-47da-ad51-0f348f718b49","type":"WheelZoomTool"},{"attributes":{},"id":"b92e67d3-6d9a-4fcf-895d-8b42acb63a7e","type":"Selection"},{"attributes":{},"id":"a1b4e8a0-25e0-456e-b5d2-954a381f9163","type":"CategoricalScale"},{"attributes":{"callback":null,"factors":["Jameis Winston","Joe Flacco","Brock Osweiler","Derek Anderson","Eli Manning","Sam Darnold","Baker Mayfield","Josh Rosen","C.J. Beathard","Drew Brees","Tom Brady","Alex Smith","Blake Bortles","Ben Roethlisberger","Matthew Stafford","Case Keenum","Mitchell Trubisky","Aaron Rodgers","Andy Dalton","Kirk Cousins","Jared Goff","Nathan Peterman","Cam Newton","Carson Wentz","Patrick Mahomes","Andrew Luck","Derek Carr","Lamar Jackson","Ryan Fitzpatrick","Deshaun Watson","Russell Wilson"]},"id":"5c8f67b4-2b67-4ab0-80ab-586a7496bc24","type":"FactorRange"},{"attributes":{"formatter":{"id":"a2404b60-8c50-49cc-8209-973d9ee7d33e","type":"CategoricalTickFormatter"},"plot":{"id":"eb9889c3-a5e6-4e25-ad8c-0706e45e8f8b","subtype":"Figure","type":"Plot"},"ticker":{"id":"8d047669-ed32-4ea2-8c29-bfcad3ba421f","type":"CategoricalTicker"}},"id":"a439be3c-4a9f-4953-88d6-2cec3bcd2baf","type":"CategoricalAxis"},{"attributes":{},"id":"a2404b60-8c50-49cc-8209-973d9ee7d33e","type":"CategoricalTickFormatter"},{"attributes":{},"id":"8d047669-ed32-4ea2-8c29-bfcad3ba421f","type":"CategoricalTicker"},{"attributes":{"overlay":{"id":"d5764534-1426-4d49-88df-ec9c7b97d90b","type":"BoxAnnotation"}},"id":"99981ada-85dc-4fbe-a82b-89ca9ad729e6","type":"BoxZoomTool"},{"attributes":{"callback":null},"id":"a43e3985-4165-48b6-a6f3-21443b7d82fa","type":"DataRange1d"},{"attributes":{"dimension":1,"plot":{"id":"eb9889c3-a5e6-4e25-ad8c-0706e45e8f8b","subtype":"Figure","type":"Plot"},"ticker":{"id":"8d047669-ed32-4ea2-8c29-bfcad3ba421f","type":"CategoricalTicker"}},"id":"f5ade5ce-0b7a-432d-bd91-ccd38b6a4c3c","type":"Grid"},{"attributes":{},"id":"208d947a-24c2-478d-a8b1-b9506f2ee413","type":"BasicTickFormatter"},{"attributes":{},"id":"174a1c08-7dec-446a-ac96-c3081033d633","type":"SaveTool"},{"attributes":{"below":[{"id":"2e318007-c3d3-4e07-b32c-e0fd79dcf1b9","type":"LinearAxis"}],"left":[{"id":"a439be3c-4a9f-4953-88d6-2cec3bcd2baf","type":"CategoricalAxis"}],"renderers":[{"id":"2e318007-c3d3-4e07-b32c-e0fd79dcf1b9","type":"LinearAxis"},{"id":"917c336c-2c85-46ce-b755-eaf1141bb9ee","type":"Grid"},{"id":"a439be3c-4a9f-4953-88d6-2cec3bcd2baf","type":"CategoricalAxis"},{"id":"f5ade5ce-0b7a-432d-bd91-ccd38b6a4c3c","type":"Grid"},{"id":"d5764534-1426-4d49-88df-ec9c7b97d90b","type":"BoxAnnotation"},{"id":"fd30e853-2f28-4ce0-8c0a-4cabbfff957f","type":"GlyphRenderer"}],"title":{"id":"3e35cdb0-5291-4430-8dc8-7c5c7cec18fd","type":"Title"},"toolbar":{"id":"f44cf70e-f071-46e9-9a4c-b6d88814dc77","type":"Toolbar"},"x_range":{"id":"a43e3985-4165-48b6-a6f3-21443b7d82fa","type":"DataRange1d"},"x_scale":{"id":"867da464-e16a-4a62-aed1-1e42fc963178","type":"LinearScale"},"y_range":{"id":"5c8f67b4-2b67-4ab0-80ab-586a7496bc24","type":"FactorRange"},"y_scale":{"id":"a1b4e8a0-25e0-456e-b5d2-954a381f9163","type":"CategoricalScale"}},"id":"eb9889c3-a5e6-4e25-ad8c-0706e45e8f8b","subtype":"Figure","type":"Plot"},{"attributes":{"plot":null,"text":"PFR Week 8 Passer Rating"},"id":"3e35cdb0-5291-4430-8dc8-7c5c7cec18fd","type":"Title"},{"attributes":{"callback":null,"data":{"adjusted_yards_per_attempt":{"__ndarray__":"exSuR+F6CkAK16NwPQoJQDMzMzMzMxVAH4XrUbgeGUDsUbgehesUQOF6FK5H4RdAcT0K16NwE0C4HoXrUbgYQAAAAAAAAB5AhetRuB6FEEDNzMzMzMwcQMP1KFyPwhhA16NwPQrXHUAAAAAAAAAcQIXrUbgehR5APQrXo3A9HkBxPQrXo/AhQGZmZmZmZiRAUrgehevRIkDD9Shcj0IhQEjhehSuRyRAAAAAAAAAJ0Bcj8L1KNwhQI/C9ShcDyRA4XoUrkfhI0DNzMzMzEwjQLgehetRuCVAZmZmZmZmKkAzMzMzMzMvQDMzMzMz8zBAH4XrUbgeMkA=","dtype":"float64","shape":[31]},"age":{"__ndarray__":"7FG4HoVLOEAUrkfheqRAQIPAyqFFVjtAxCCwcmiRQUCgGi/dJKZCQIXrUbgeJTVA30+Nl24yN0DD9Shcj0I1QH9qvHSTWDhA+FPjpZukQ0BBYOXQIotEQIPAyqFFFkFAAyuHFtkuOkAfhetRuB5CQBfZzvdTQz5AVOOlm8RAPkCObOf7qRE4QArXo3A9KkFAd76fGi9dPkBSuB6F6xE+QN0kBoGVAzhAIbByaJEtOEDsUbgehSs9QFpkO99PTTlA0SLb+X4KN0Cyne+nxgs9QBFYObTINjtAJQaBlUNLNUAlBoGVQ6tBQNEi2/l+CjdAaZHtfD9VPUA=","dtype":"float64","shape":[31]},"away":["@","@","@","NaN","NaN","@","@","NaN","@","@","@","@","NaN","NaN","NaN","@","NaN","@","NaN","NaN","NaN","NaN","NaN","@","NaN","@","NaN","@","@","NaN","@"],"completion_percentage":{"__ndarray__":"16NwPQq3SUAUrkfhejRMQOF6FK5HYUxAFK5H4Xo0TEAK16NwPepPQKRwPQrXI0hArkfhehSOTkAAAAAAAMBMQAAAAAAAAElAcT0K16OQU0Bcj8L1KBxQQAAAAAAAQE9AhetRuB5FTUB7FK5H4apQQAAAAAAA4FBAmpmZmZnpUED2KFyPwpVLQAAAAAAAAE5A4XoUrkfhTkDXo3A9CudSQIXrUbgeJUtAAAAAAAAAWUAK16NwPRpSQAAAAAAAgFFA9ihcj8KlUUCuR+F6FL5RQAAAAAAAwFJAAAAAAAAAVECF61G4HlVSQAAAAAAAAFRAZmZmZmaWVEA=","dtype":"float64","shape":[31]},"date":["2018-10-28","2018-10-28","2018-10-25","2018-10-29","2018-10-28","2018-10-28","2018-10-28","2018-10-28","2018-10-28","2018-10-28","2018-10-29","2018-10-28","2018-10-28","2018-10-28","2018-10-28","2018-10-28","2018-10-28","2018-10-28","2018-10-28","2018-10-28","2018-10-28","2018-10-29","2018-10-28","2018-10-28","2018-10-28","2018-10-28","2018-10-28","2018-10-28","2018-10-28","2018-10-25","2018-10-28"],"day":["Sun","Sun","Thu","Mon","Sun","Sun","Sun","Sun","Sun","Sun","Mon","Sun","Sun","Sun","Sun","Sun","Sun","Sun","Sun","Sun","Sun","Mon","Sun","Sun","Sun","Sun","Sun","Sun","Sun","Thu","Sun"],"game_number":[7,8,8,8,8,8,8,8,8,7,8,7,8,7,7,8,7,7,8,8,8,8,7,8,8,8,7,8,7,8,7],"index":[277,276,275,274,273,272,271,270,269,268,267,266,265,264,263,262,261,260,259,258,257,256,254,251,250,249,248,247,246,245,244],"interceptions":[4,2,1,1,2,0,1,1,0,1,0,0,0,1,1,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0],"is_shit":["Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Decent","Decent","Dalton","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent"],"league":["NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL"],"opponent":["CIN","CAR","HOU","NWE","WAS","CHI","PIT","SFO","ARI","MIN","BUF","NYG","PHI","CLE","SEA","KAN","NYJ","LAR","TAM","NOR","GNB","NWE","BAL","JAX","DEN","OAK","IND","CAR","CIN","MIA","DET"],"passer_rating":{"__ndarray__":"mpmZmZnZR0BmZmZmZmZMQDMzMzMzU1BAmpmZmZlZUUDNzMzMzCxSQDMzMzMz81JAMzMzMzMzVEAAAAAAAKBUQJqZmZmZ+VRAMzMzMzMzVUAzMzMzM3NVQDMzMzMz81VAZmZmZmYGVkAzMzMzM5NXQJqZmZmZOVhAmpmZmZl5WEDNzMzMzKxZQJqZmZmZuVlAAAAAAADgWkDNzMzMzOxaQAAAAAAAwFtAZmZmZmamXECamZmZmTldQGZmZmZm5l1AAAAAAABAX0BmZmZmZmZfQDMzMzMzE2FAMzMzMzMTYkDNzMzMzFxjQAAAAAAAgGNAmpmZmZnJY0A=","dtype":"float64","shape":[31]},"passes_attempted":[35,39,37,39,47,29,36,40,28,23,45,32,41,36,40,34,29,30,34,41,35,2,29,30,34,31,28,5,15,20,17],"passes_completed":[18,22,21,22,30,14,22,23,14,18,29,20,24,24,27,23,16,18,21,31,19,2,21,21,24,22,21,4,11,16,14],"passing_touchdowns":[1,1,0,0,1,1,2,2,1,1,0,1,1,2,2,2,2,1,2,2,3,0,2,3,4,3,3,1,2,5,3],"player":["Jameis Winston","Joe Flacco","Brock Osweiler","Derek Anderson","Eli Manning","Sam Darnold","Baker Mayfield","Josh Rosen","C.J. Beathard","Drew Brees","Tom Brady","Alex Smith","Blake Bortles","Ben Roethlisberger","Matthew Stafford","Case Keenum","Mitchell Trubisky","Aaron Rodgers","Andy Dalton","Kirk Cousins","Jared Goff","Nathan Peterman","Cam Newton","Carson Wentz","Patrick Mahomes","Andrew Luck","Derek Carr","Lamar Jackson","Ryan Fitzpatrick","Deshaun Watson","Russell Wilson"],"pos":["QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB"],"result":["L 34-37","L 21-36","L 23-42","L 6-25","L 13-20","L 10-24","L 18-33","W 18-15","L 15-18","W 30-20","W 25-6","W 20-13","L 18-24","W 33-18","L 14-28","L 23-30","W 24-10","L 27-29","W 37-34","L 20-30","W 29-27","L 6-25","W 36-21","W 24-18","W 30-23","W 42-28","L 28-42","L 21-36","L 34-37","W 42-23","W 28-14"],"sacks_taken":{"__ndarray__":"AAAAAAAAFEAAAAAAAAAAQAAAAAAAAABAAAAAAAAACEAAAAAAAAAcQAAAAAAAAPA/AAAAAAAAAEAAAAAAAAAIQAAAAAAAABBAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAEEAAAAAAAADwPwAAAAAAAAhAAAAAAAAAFEAAAAAAAAAAQAAAAAAAAAhAAAAAAAAAAEAAAAAAAAAQQAAAAAAAABRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwPwAAAAAAAAAAAAAAAAAAAEA=","dtype":"float64","shape":[31]},"team":["TAM","BAL","MIA","BUF","NYG","NYJ","CLE","ARI","SFO","NOR","NWE","WAS","JAX","PIT","DET","DEN","CHI","GNB","CIN","MIN","LAR","BUF","CAR","PHI","KAN","IND","OAK","BAL","TAM","HOU","SEA"],"week":[8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8],"yards_from_passing":[276,192,241,290,316,153,180,252,190,120,324,178,286,257,310,262,220,286,280,359,295,23,219,286,303,239,244,46,194,239,248],"yards_lost_to_sacks":{"__ndarray__":"AAAAAAAANEAAAAAAAAAsQAAAAAAAAC5AAAAAAAAAOkAAAAAAAABJQAAAAAAAAAhAAAAAAAAAMUAAAAAAAAAzQAAAAAAAAD5AAAAAAAAAAAAAAAAAAAAqQAAAAAAAAAAAAAAAAAAANUAAAAAAAAAQQAAAAAAAACpAAAAAAAAAREAAAAAAAAAQQAAAAAAAgEBAAAAAAAAAMEAAAAAAAAA1QAAAAAAAADpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADhAAAAAAAAAKEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJkA=","dtype":"float64","shape":[31]},"yards_per_attempt":{"__ndarray__":"j8L1KFyPH0CuR+F6FK4TQArXo3A9ChpAw/UoXI/CHUDhehSuR+EaQB+F61G4HhVAAAAAAAAAFEAzMzMzMzMZQClcj8L1KBtA4XoUrkfhFEDNzMzMzMwcQD0K16NwPRZA7FG4HoXrG0CPwvUoXI8cQAAAAAAAAB9A16NwPQrXHkBcj8L1KFweQI/C9ShcDyNAexSuR+F6IECF61G4HoUhQFyPwvUo3CBAAAAAAAAAJ0AzMzMzMzMeQI/C9ShcDyNAUrgehevRIUDXo3A9CtceQOxRuB6FayFAZmZmZmZmIkBcj8L1KNwpQGZmZmZm5idArkfhehQuLUA=","dtype":"float64","shape":[31]}},"selected":{"id":"b92e67d3-6d9a-4fcf-895d-8b42acb63a7e","type":"Selection"},"selection_policy":{"id":"09f3ab89-d1ea-430e-8197-cb3ece1786df","type":"UnionRenderers"}},"id":"bbe9a6d5-d8bc-4b01-9546-bb9cd847470d","type":"ColumnDataSource"},{"attributes":{"factors":["Dalton","Decent","Dog Shit"],"palette":["#7fc97f","#beaed4","#fdc086","#ffff99","#386cb0"]},"id":"00fbfc4d-a8ae-4b85-86ec-3654c9643db7","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"renderers":"auto","tooltips":[["passer rating","@passer_rating"]]},"id":"d28f9390-b597-409f-ae39-3c8fa9be3291","type":"HoverTool"},{"attributes":{},"id":"09f3ab89-d1ea-430e-8197-cb3ece1786df","type":"UnionRenderers"},{"attributes":{},"id":"60f2a2c5-a927-4049-9fb1-9cb74e1e43bd","type":"BasicTicker"}],"root_ids":["eb9889c3-a5e6-4e25-ad8c-0706e45e8f8b"]},"title":"Bokeh Application","version":"0.13.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('729c0396-6052-464d-bb4d-ecbf07ab3940').textContent;
+                  var render_items = [{"docid":"eb00dd97-d6e3-461f-a10b-b09d52713fa5","roots":{"eb9889c3-a5e6-4e25-ad8c-0706e45e8f8b":"3d617b7d-9176-48fa-811e-8c5729c43e5f"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

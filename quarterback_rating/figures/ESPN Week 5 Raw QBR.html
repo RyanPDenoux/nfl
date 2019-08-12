@@ -1,0 +1,83 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            <div class="bk-root" id="c6faff68-b808-47f6-ae3d-478bf1b2902e"></div>
+          
+        
+      
+      
+        <script type="application/json" id="39b25c40-bc27-40ba-868d-4b3c9f0e58a5">
+          {"f1e720ff-ee99-4008-b211-a81528489825":{"roots":{"references":[{"attributes":{"formatter":{"id":"eba11176-c630-40a4-8bb3-c12b92c52a12","type":"CategoricalTickFormatter"},"plot":{"id":"aac2c04f-f99e-49f1-8b2c-659d472d2cdb","subtype":"Figure","type":"Plot"},"ticker":{"id":"42641306-d469-49fc-bb04-9a7fd81d9dbf","type":"CategoricalTicker"}},"id":"a5488cee-77a5-4a4f-9d37-441606f79dba","type":"CategoricalAxis"},{"attributes":{"below":[{"id":"993578b5-44bb-4219-aab9-a42765e20bc4","type":"LinearAxis"}],"left":[{"id":"a5488cee-77a5-4a4f-9d37-441606f79dba","type":"CategoricalAxis"}],"renderers":[{"id":"993578b5-44bb-4219-aab9-a42765e20bc4","type":"LinearAxis"},{"id":"3ef1c277-44fd-42cd-86fc-5b76f0c87ec0","type":"Grid"},{"id":"a5488cee-77a5-4a4f-9d37-441606f79dba","type":"CategoricalAxis"},{"id":"25e416a6-6eda-4c44-a817-76eebde1e97e","type":"Grid"},{"id":"802b4d02-0acd-4cb8-b3f7-180ffb6eabf6","type":"BoxAnnotation"},{"id":"f5d4f245-14cd-4a02-945c-d12a15a676fa","type":"GlyphRenderer"}],"title":{"id":"3d169242-002e-4761-9aad-6f3d2ac794d4","type":"Title"},"toolbar":{"id":"3013bf9e-5e80-4074-8e7f-76118190b59c","type":"Toolbar"},"x_range":{"id":"c0ac0f50-f3f6-4642-9548-32df0fe9765f","type":"DataRange1d"},"x_scale":{"id":"7f5edf08-b4b5-4059-aaf6-d990146eaae8","type":"LinearScale"},"y_range":{"id":"cbd996c8-1c3b-47ac-866f-b96217ac604d","type":"FactorRange"},"y_scale":{"id":"d31d7add-5a00-4752-a16b-c41a961a71c6","type":"CategoricalScale"}},"id":"aac2c04f-f99e-49f1-8b2c-659d472d2cdb","subtype":"Figure","type":"Plot"},{"attributes":{"fill_color":{"field":"is_shit","transform":{"id":"a9f572a0-1581-4922-96ba-f2efc94c9448","type":"CategoricalColorMapper"}},"height":{"value":0.8},"line_color":{"field":"is_shit","transform":{"id":"a9f572a0-1581-4922-96ba-f2efc94c9448","type":"CategoricalColorMapper"}},"right":{"field":"raw_qbr"},"y":{"field":"player"}},"id":"bdc41a94-d5f5-4efe-a650-ba9044ac9e21","type":"HBar"},{"attributes":{},"id":"42641306-d469-49fc-bb04-9a7fd81d9dbf","type":"CategoricalTicker"},{"attributes":{},"id":"a956fb78-417b-4ea8-adba-d0b335a4af21","type":"BasicTicker"},{"attributes":{},"id":"d69f89c0-70e4-43aa-9e58-cd3667b8871e","type":"ResetTool"},{"attributes":{},"id":"cafae379-8f99-4ee9-92fa-9a22b25e2909","type":"Selection"},{"attributes":{},"id":"39f01677-bd52-4481-9327-9cfa85ddaa7e","type":"SaveTool"},{"attributes":{},"id":"3d55e373-a3ab-4c78-b4c7-ad966dadae13","type":"UnionRenderers"},{"attributes":{"axis_label":"raw_qbr","formatter":{"id":"cce53363-97aa-42b4-9ebc-a0dbfa2a9b67","type":"BasicTickFormatter"},"plot":{"id":"aac2c04f-f99e-49f1-8b2c-659d472d2cdb","subtype":"Figure","type":"Plot"},"ticker":{"id":"a956fb78-417b-4ea8-adba-d0b335a4af21","type":"BasicTicker"}},"id":"993578b5-44bb-4219-aab9-a42765e20bc4","type":"LinearAxis"},{"attributes":{},"id":"d31d7add-5a00-4752-a16b-c41a961a71c6","type":"CategoricalScale"},{"attributes":{"plot":{"id":"aac2c04f-f99e-49f1-8b2c-659d472d2cdb","subtype":"Figure","type":"Plot"},"ticker":{"id":"a956fb78-417b-4ea8-adba-d0b335a4af21","type":"BasicTicker"}},"id":"3ef1c277-44fd-42cd-86fc-5b76f0c87ec0","type":"Grid"},{"attributes":{},"id":"7f5edf08-b4b5-4059-aaf6-d990146eaae8","type":"LinearScale"},{"attributes":{},"id":"cce53363-97aa-42b4-9ebc-a0dbfa2a9b67","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"37631f4b-a180-49e8-99da-836fe03c1f33","type":"ColumnDataSource"}},"id":"8e0b069e-7ba8-4d94-8830-ccec14aa47fe","type":"CDSView"},{"attributes":{"callback":null,"renderers":"auto","tooltips":[["raw qbr","@raw_qbr"]]},"id":"7620e692-0d68-41b4-999c-d4a8c1911ca1","type":"HoverTool"},{"attributes":{"dimension":1,"plot":{"id":"aac2c04f-f99e-49f1-8b2c-659d472d2cdb","subtype":"Figure","type":"Plot"},"ticker":{"id":"42641306-d469-49fc-bb04-9a7fd81d9dbf","type":"CategoricalTicker"}},"id":"25e416a6-6eda-4c44-a817-76eebde1e97e","type":"Grid"},{"attributes":{},"id":"4f805d84-1bd5-499f-a31c-c80f9b7aa877","type":"PanTool"},{"attributes":{"overlay":{"id":"802b4d02-0acd-4cb8-b3f7-180ffb6eabf6","type":"BoxAnnotation"}},"id":"da7ffdf7-4133-4cdd-915d-ce66ae977ac2","type":"BoxZoomTool"},{"attributes":{},"id":"2ec0c17c-7554-4d4b-a210-5ae92fd9948f","type":"WheelZoomTool"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"802b4d02-0acd-4cb8-b3f7-180ffb6eabf6","type":"BoxAnnotation"},{"attributes":{"callback":null,"factors":["Blake_Bortles","Ryan_Tannehill","Joe_Flacco","Cam_Newton","Marcus_Mariota","Case_Keenum","Derek_Carr","Josh_Rosen","Alex_Smith","Baker_Mayfield","Josh_Allen","Dak_Prescott","Andy_Dalton","C.J._Beathard","Carson_Wentz","Matt_Ryan","Sam_Darnold","Matthew_Stafford","Deshaun_Watson","Andrew_Luck","Eli_Manning","Aaron_Rodgers","Kirk_Cousins","Patrick_Mahomes","Jared_Goff","Tom_Brady","Philip_Rivers","Russell_Wilson","Drew_Brees","Ben_Roethlisberger"]},"id":"cbd996c8-1c3b-47ac-866f-b96217ac604d","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"value":0.8},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"right":{"field":"raw_qbr"},"y":{"field":"player"}},"id":"d9ebc783-8a5f-4a79-96e1-e612df7b1ff2","type":"HBar"},{"attributes":{"callback":null},"id":"c0ac0f50-f3f6-4642-9548-32df0fe9765f","type":"DataRange1d"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"4f805d84-1bd5-499f-a31c-c80f9b7aa877","type":"PanTool"},{"id":"2ec0c17c-7554-4d4b-a210-5ae92fd9948f","type":"WheelZoomTool"},{"id":"da7ffdf7-4133-4cdd-915d-ce66ae977ac2","type":"BoxZoomTool"},{"id":"39f01677-bd52-4481-9327-9cfa85ddaa7e","type":"SaveTool"},{"id":"d69f89c0-70e4-43aa-9e58-cd3667b8871e","type":"ResetTool"},{"id":"87746865-35d7-48b3-bd2b-61670a6de85a","type":"HelpTool"},{"id":"7620e692-0d68-41b4-999c-d4a8c1911ca1","type":"HoverTool"}]},"id":"3013bf9e-5e80-4074-8e7f-76118190b59c","type":"Toolbar"},{"attributes":{"factors":["Dalton","Decent","Dog Shit"],"palette":["#7fc97f","#beaed4","#fdc086","#ffff99","#386cb0"]},"id":"a9f572a0-1581-4922-96ba-f2efc94c9448","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"data":{"index":[127,128,126,124,122,117,121,123,125,119,120,118,113,115,112,110,116,114,111,107,109,108,105,103,102,106,104,100,99,101],"is_shit":["Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dalton","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent"],"pass":{"__ndarray__":"AAAAAAAADMBmZmZmZmb+v83MzMzMzATAmpmZmZmZ6T8zMzMzMzPzvwAAAAAAAPC/zczMzMzM7L9mZmZmZmbmP5qZmZmZmfm/zczMzMzM9L8AAAAAAADgv5qZmZmZmbk/mpmZmZmZ+T8AAAAAAAAAQAAAAAAAAARAmpmZmZmZyT9mZmZmZmb+P2ZmZmZmZv4/AAAAAAAAHkAAAAAAAAASQDMzMzMzMxFAZmZmZmZm/j8AAAAAAAAgQJqZmZmZmRFAzczMzMzMFkAzMzMzMzMbQGZmZmZmZhBAMzMzMzMzE0CamZmZmZkVQGZmZmZmZhhA","dtype":"float64","shape":[30]},"penalty":{"__ndarray__":"mpmZmZmZuT+amZmZmZm5v5qZmZmZmdk/AAAAAAAA4D+amZmZmZm5v5qZmZmZmbm/MzMzMzMz4z8zMzMzMzPTPwAAAAAAAAAAmpmZmZmZub8zMzMzMzPTP5qZmZmZmbk/AAAAAAAAAICamZmZmZm5P5qZmZmZmbm/AAAAAAAAAIAAAAAAAAAAAJqZmZmZmbk/MzMzMzMz4z+amZmZmZnJv5qZmZmZmbm/mpmZmZmZ2T+amZmZmZm5vwAAAAAAAAAAAAAAAAAA4D+amZmZmZm5v5qZmZmZmbk/mpmZmZmZuT+amZmZmZnpP2ZmZmZmZvY/","dtype":"float64","shape":[30]},"player":["Blake_Bortles","Ryan_Tannehill","Joe_Flacco","Cam_Newton","Marcus_Mariota","Case_Keenum","Derek_Carr","Josh_Rosen","Alex_Smith","Baker_Mayfield","Josh_Allen","Dak_Prescott","Andy_Dalton","C.J._Beathard","Carson_Wentz","Matt_Ryan","Sam_Darnold","Matthew_Stafford","Deshaun_Watson","Andrew_Luck","Eli_Manning","Aaron_Rodgers","Kirk_Cousins","Patrick_Mahomes","Jared_Goff","Tom_Brady","Philip_Rivers","Russell_Wilson","Drew_Brees","Ben_Roethlisberger"],"pts_added":{"__ndarray__":"ZmZmZmZmIMAzMzMzMzMTwM3MzMzMzBbAmpmZmZmZCcAAAAAAAAAAwGZmZmZmZg7AMzMzMzMzA8AzMzMzMzPzv83MzMzMzADAZmZmZmZmAsCamZmZmZnxvwAAAAAAAPC/zczMzMzM7L+amZmZmZm5P5qZmZmZmek/zczMzMzM7D8zMzMzMzPjP5qZmZmZmek/mpmZmZmZ+T/NzMzMzMz8P5qZmZmZmfk/zczMzMzMBEBmZmZmZmYGQJqZmZmZmQlAZmZmZmZmCkAAAAAAAAASQJqZmZmZmQ1AzczMzMzMDEDNzMzMzMwUQAAAAAAAABhA","dtype":"float64","shape":[30]},"qb_plays":[71,42,62,47,31,58,41,25,45,50,27,38,38,67,46,46,26,33,59,62,40,61,41,46,41,47,31,25,33,34],"raw_qbr":{"__ndarray__":"MzMzMzMzMECamZmZmZkwQM3MzMzMTDVAzczMzMzMO0AzMzMzMzM8QJqZmZmZmTxAAAAAAACAPkAzMzMzM7NAQDMzMzMzM0FAAAAAAABAQUAAAAAAAMBBQJqZmZmZmURAZmZmZmbmREDNzMzMzExJQM3MzMzMDExAmpmZmZlZTEAAAAAAAABNQM3MzMzMTE1AAAAAAADATUAAAAAAAABOQM3MzMzMzE9AmpmZmZkZUEDNzMzMzAxSQM3MzMzMLFJAAAAAAAAAU0CamZmZmdlTQJqZmZmZGVVAMzMzMzMTVkBmZmZmZoZWQJqZmZmZGVdA","dtype":"float64","shape":[30]},"run":{"__ndarray__":"zczMzMzM9D+amZmZmZm5PzMzMzMzM/M/MzMzMzMz47+amZmZmZnxPwAAAAAAAAAAmpmZmZmZuT8AAAAAAAAAADMzMzMzM/M/mpmZmZmZ6T/NzMzMzMzsPzMzMzMzM/M/AAAAAAAA4L/NzMzMzMzsP5qZmZmZmck/ZmZmZmZm9j+amZmZmZnJPwAAAAAAAAAAzczMzMzMAMAAAAAAAAAAAGZmZmZmZuY/mpmZmZmZAUCamZmZmZkBwAAAAAAAAOA/mpmZmZmZ2T+amZmZmZnZPwAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvzMzMzMzM+M/","dtype":"float64","shape":[30]},"total_epa":{"__ndarray__":"zczMzMzM7L+amZmZmZnpv5qZmZmZmbm/mpmZmZmZ8T+amZmZmZnpP5qZmZmZmfE/AAAAAAAA8D8AAAAAAADwP83MzMzMzPQ/ZmZmZmZmAkDNzMzMzMz0PwAAAAAAAARAMzMzMzMzA0AzMzMzMzMVQGZmZmZmZhBAAAAAAAAAEEDNzMzMzMwEQM3MzMzMzARAAAAAAAAAHEAzMzMzMzMTQGZmZmZmZhRAmpmZmZmZFUBmZmZmZmYYQAAAAAAAABZAZmZmZmZmHEAAAAAAAAAcQDMzMzMzMxNAMzMzMzMzF0AAAAAAAAAYQAAAAAAAACBA","dtype":"float64","shape":[30]},"total_qbr":{"__ndarray__":"mpmZmZmZN0DNzMzMzMwvQDMzMzMzszhAZmZmZmbmO0DNzMzMzIxBQAAAAAAAwENAZmZmZmamQUBmZmZmZmZBQAAAAAAAADpAAAAAAABAQ0CamZmZmdlBQM3MzMzMTENAzczMzMxMSkBmZmZmZiZJQAAAAAAAgEpAAAAAAADATUCamZmZmZlEQDMzMzMzs0lAAAAAAACASkAAAAAAAMBQQDMzMzMz805AMzMzMzOTUECamZmZmdlSQJqZmZmZGVNAmpmZmZkZU0CamZmZmflRQDMzMzMzE1NAAAAAAAAAVUDNzMzMzIxWQJqZmZmZ+VRA","dtype":"float64","shape":[30]},"week":[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]},"selected":{"id":"cafae379-8f99-4ee9-92fa-9a22b25e2909","type":"Selection"},"selection_policy":{"id":"3d55e373-a3ab-4c78-b4c7-ad966dadae13","type":"UnionRenderers"}},"id":"37631f4b-a180-49e8-99da-836fe03c1f33","type":"ColumnDataSource"},{"attributes":{"plot":null,"text":"ESPN Week 5 Raw QBR"},"id":"3d169242-002e-4761-9aad-6f3d2ac794d4","type":"Title"},{"attributes":{},"id":"87746865-35d7-48b3-bd2b-61670a6de85a","type":"HelpTool"},{"attributes":{"data_source":{"id":"37631f4b-a180-49e8-99da-836fe03c1f33","type":"ColumnDataSource"},"glyph":{"id":"bdc41a94-d5f5-4efe-a650-ba9044ac9e21","type":"HBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d9ebc783-8a5f-4a79-96e1-e612df7b1ff2","type":"HBar"},"selection_glyph":null,"view":{"id":"8e0b069e-7ba8-4d94-8830-ccec14aa47fe","type":"CDSView"}},"id":"f5d4f245-14cd-4a02-945c-d12a15a676fa","type":"GlyphRenderer"},{"attributes":{},"id":"eba11176-c630-40a4-8bb3-c12b92c52a12","type":"CategoricalTickFormatter"}],"root_ids":["aac2c04f-f99e-49f1-8b2c-659d472d2cdb"]},"title":"Bokeh Application","version":"0.13.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('39b25c40-bc27-40ba-868d-4b3c9f0e58a5').textContent;
+                  var render_items = [{"docid":"f1e720ff-ee99-4008-b211-a81528489825","roots":{"aac2c04f-f99e-49f1-8b2c-659d472d2cdb":"c6faff68-b808-47f6-ae3d-478bf1b2902e"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

@@ -1,4 +1,6 @@
 # QUARTERBACK_RATING
+.gitignore
+
 # do not stage data files and results files for portability
 quarterback_rating/data/*
 quarterback_rating/results/*
@@ -6,3 +8,6 @@ quarterback_rating/results/*
 # Project files and metadata
 *.Rproj
 .Rproj*
+*.RData
+*.Rhistory
+*.RProject*

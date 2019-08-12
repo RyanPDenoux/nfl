@@ -1,0 +1,83 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            <div class="bk-root" id="25454388-dd7b-446a-8129-20fa3abda46c"></div>
+          
+        
+      
+      
+        <script type="application/json" id="41f846bf-7e66-4cb6-bfc1-47e2efbdb984">
+          {"1857d9ee-0781-42ee-8668-18d2aada4830":{"roots":{"references":[{"attributes":{"callback":null},"id":"b2acd94c-47d1-47e4-87bf-37168697aa42","type":"DataRange1d"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"9ecb9c8c-36c1-465a-ab4f-10a426852031","type":"BoxAnnotation"},{"attributes":{"fill_color":{"field":"is_shit","transform":{"id":"265de17f-dc61-44a8-aaca-d2159b862159","type":"CategoricalColorMapper"}},"height":{"value":0.8},"line_color":{"field":"is_shit","transform":{"id":"265de17f-dc61-44a8-aaca-d2159b862159","type":"CategoricalColorMapper"}},"right":{"field":"raw_qbr"},"y":{"field":"player"}},"id":"48b846e3-85f8-4865-9430-d0e5176eb80e","type":"HBar"},{"attributes":{"callback":null,"data":{"index":[33,29,32,31,28,23,27,24,25,22,30,26,19,16,20,11,21,17,18,10,15,14,12,13,9,5,8,6,2,3,7,4,1,0],"is_shit":["Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Decent","Dalton","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent"],"pass":{"__ndarray__":"ZmZmZmZmFMDNzMzMzMwQwAAAAAAAAATAAAAAAAAAAMCamZmZmZkVwDMzMzMzM+O/AAAAAAAA+L9mZmZmZmYGwDMzMzMzMwPAAAAAAAAAAABmZmZmZmbmv5qZmZmZmfm/MzMzMzMz4z+amZmZmZnZvzMzMzMzM/M/mpmZmZmZ2b8zMzMzMzPTvzMzMzMzM9M/MzMzMzMzEcDNzMzMzMz0PwAAAAAAAAhAMzMzMzMz4z+amZmZmZkJQJqZmZmZmQlAMzMzMzMzB0BmZmZmZmYOQJqZmZmZmR9AZmZmZmZmEEDNzMzMzMwUQM3MzMzMzAhAzczMzMzMGkBmZmZmZmYUQDMzMzMzMyJAMzMzMzMzI0A=","dtype":"float64","shape":[34]},"penalty":{"__ndarray__":"mpmZmZmZuT+amZmZmZnJP5qZmZmZmck/MzMzMzMz478AAAAAAADgP5qZmZmZmbk/MzMzMzMz07+amZmZmZm5P5qZmZmZmcm/mpmZmZmZub/NzMzMzMzsPwAAAAAAAAAAAAAAAAAA8D+amZmZmZm5P5qZmZmZmbk/mpmZmZmZyT+amZmZmZnJvzMzMzMzM9O/mpmZmZmZ2T8AAAAAAADgv5qZmZmZmbk/mpmZmZmZyb8zMzMzMzPTP5qZmZmZmdk/ZmZmZmZm/j8zMzMzMzPzP5qZmZmZmcm/mpmZmZmZyT+amZmZmZnJvwAAAAAAAACAmpmZmZmZ2T8AAAAAAADwP5qZmZmZmbk/AAAAAAAA4D8=","dtype":"float64","shape":[34]},"player":["Nathan_Peterman","Jimmy_Garoppolo","Matthew_Stafford","Derek_Carr","Matt_Ryan","Blaine_Gabbert","Deshaun_Watson","Ben_Roethlisberger","Dak_Prescott","Sam_Bradford","Nick_Foles","Mitchell_Trubisky","Eli_Manning","Josh_Allen","Ryan_Tannehill","Marcus_Mariota","Russell_Wilson","Blake_Bortles","Tyrod_Taylor","Aaron_Rodgers","Case_Keenum","Cam_Newton","Philip_Rivers","Kirk_Cousins","Jared_Goff","Andy_Dalton","Andrew_Luck","Patrick_Mahomes","Alex_Smith","Sam_Darnold","Tom_Brady","Joe_Flacco","Drew_Brees","Ryan_Fitzpatrick"],"pts_added":{"__ndarray__":"mpmZmZmZIMDNzMzMzMwYwDMzMzMzMx/AMzMzMzMzHcDNzMzMzMwcwDMzMzMzMwfAzczMzMzMFMDNzMzMzMwQwJqZmZmZmQ3AMzMzMzMzB8AzMzMzMzMHwGZmZmZmZgbAZmZmZmZmAsAzMzMzMzPzv5qZmZmZmfm/ZmZmZmZm5r8AAAAAAAD4v5qZmZmZmfG/zczMzMzM9L8zMzMzMzPjvzMzMzMzM9O/MzMzMzMz0z/NzMzMzMzsP5qZmZmZmfE/mpmZmZmZBUBmZmZmZmYGQGZmZmZmZhRAMzMzMzMzC0AzMzMzMzMRQAAAAAAAAAhAMzMzMzMzFUAAAAAAAAAUQM3MzMzMzCJAZmZmZmZmI0A=","dtype":"float64","shape":[34]},"qb_plays":[24,41,52,50,52,24,48,49,45,39,40,46,45,25,35,20,43,39,63,36,43,45,58,46,36,35,57,36,44,27,45,40,50,39],"raw_qbr":{"__ndarray__":"ZmZmZmZm5j8zMzMzMzMlQGZmZmZmZiVAMzMzMzMzJkDNzMzMzMwoQM3MzMzMzC5AzczMzMzMMUDNzMzMzMw2QDMzMzMzszdAZmZmZmbmOUAzMzMzMzM6QAAAAAAAgD1AZmZmZmZmQEAzMzMzM/NAQGZmZmZmJkFAMzMzMzOzQkDNzMzMzAxDQAAAAAAAQERAzczMzMxMRUCamZmZmdlFQAAAAAAAwEdAzczMzMxMSkCamZmZmdlLQM3MzMzMTE1AzczMzMyMUkAzMzMzM9NSQDMzMzMzc1NAAAAAAADgU0BmZmZmZgZUQJqZmZmZuVRAZmZmZmYGVUAzMzMzM1NVQJqZmZmZWVdAZmZmZmZGWEA=","dtype":"float64","shape":[34]},"run":{"__ndarray__":"AAAAAAAA4L8zMzMzMzPTP5qZmZmZmbk/AAAAAAAA4L+amZmZmZnpPwAAAAAAAAAAmpmZmZmZyb8AAAAAAAD4PwAAAAAAAPA/mpmZmZmZyT8AAAAAAAAAAAAAAAAAAPA/MzMzMzMz07+amZmZmZm5P5qZmZmZmbm/zczMzMzM9D+amZmZmZm5vwAAAAAAAABAMzMzMzMzFUCamZmZmZnJPwAAAAAAAAAAmpmZmZmZBUAAAAAAAAAAADMzMzMzM9M/AAAAAAAAAACamZmZmZnJv83MzMzMzPQ/mpmZmZmZ8T8zMzMzMzPjP5qZmZmZmdk/MzMzMzMz4z+amZmZmZm5PwAAAAAAAAAAzczMzMzM9D8=","dtype":"float64","shape":[34]},"total_epa":{"__ndarray__":"zczMzMzMEMCamZmZmZkBwJqZmZmZmQHAAAAAAAAABMAzMzMzMzMDwAAAAAAAAOC/MzMzMzMz47+amZmZmZnJPzMzMzMzM9M/MzMzMzMz0z9mZmZmZmbmPzMzMzMzM/M/zczMzMzM/D8zMzMzMzPTPwAAAAAAAPg/mpmZmZmZ8T9mZmZmZmYCQAAAAAAAAARAAAAAAAAAEEAAAAAAAAAAQM3MzMzMzAxAZmZmZmZmEEBmZmZmZmYQQJqZmZmZmRNAmpmZmZmZFUAzMzMzMzMXQAAAAAAAACRAmpmZmZmZF0AzMzMzMzMXQDMzMzMzMxNAZmZmZmZmIEAzMzMzMzMZQM3MzMzMzCNAzczMzMzMJkA=","dtype":"float64","shape":[34]},"total_qbr":{"__ndarray__":"mpmZmZmZ8T8zMzMzMzMuQJqZmZmZmSdAMzMzMzMzK0DNzMzMzMwxQAAAAAAAADpAAAAAAACAM0BmZmZmZuY4QM3MzMzMzDhAZmZmZmZmOkAAAAAAAAAuQM3MzMzMzDdAMzMzMzOzQUCamZmZmZlFQDMzMzMzs0FAAAAAAADASkAAAAAAAIBAQAAAAAAAgEVAMzMzMzPzQ0DNzMzMzExLQJqZmZmZ2UhAmpmZmZmZSUDNzMzMzIxKQJqZmZmZGUpAmpmZmZlZUUAzMzMzM5NTQGZmZmZmxlFAzczMzMxMU0AzMzMzM9NUQAAAAAAAwFRAZmZmZmbmUkCamZmZmZlUQJqZmZmZeVZAZmZmZmamV0A=","dtype":"float64","shape":[34]},"week":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]},"selected":{"id":"a0b93bf7-9fe8-4b84-b2d4-65e245e8befb","type":"Selection"},"selection_policy":{"id":"dae2cbb8-bb72-40a2-8cac-ce077c55589e","type":"UnionRenderers"}},"id":"7c00444a-4380-4ed7-ae70-6ea530e7006e","type":"ColumnDataSource"},{"attributes":{},"id":"44019b3f-b27d-4dff-8a57-dd97a8b92732","type":"PanTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"value":0.8},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"right":{"field":"raw_qbr"},"y":{"field":"player"}},"id":"52a82e17-b1c9-4fb3-938c-f0d04315b76a","type":"HBar"},{"attributes":{"overlay":{"id":"9ecb9c8c-36c1-465a-ab4f-10a426852031","type":"BoxAnnotation"}},"id":"a0f2b309-f2ab-48d3-be04-ee2fad3ef193","type":"BoxZoomTool"},{"attributes":{"factors":["Dalton","Decent","Dog Shit"],"palette":["#7fc97f","#beaed4","#fdc086","#ffff99","#386cb0"]},"id":"265de17f-dc61-44a8-aaca-d2159b862159","type":"CategoricalColorMapper"},{"attributes":{},"id":"88c8d9ff-3eaf-4cc4-bbd3-8a37160d111f","type":"WheelZoomTool"},{"attributes":{"data_source":{"id":"7c00444a-4380-4ed7-ae70-6ea530e7006e","type":"ColumnDataSource"},"glyph":{"id":"48b846e3-85f8-4865-9430-d0e5176eb80e","type":"HBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"52a82e17-b1c9-4fb3-938c-f0d04315b76a","type":"HBar"},"selection_glyph":null,"view":{"id":"307d8dd9-deae-4df4-a373-51468e4cdf0a","type":"CDSView"}},"id":"88991241-b325-450e-a97d-8bf661b99c4e","type":"GlyphRenderer"},{"attributes":{},"id":"627cb4cb-4ab7-4e8d-988c-42e1f2a26686","type":"ResetTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"44019b3f-b27d-4dff-8a57-dd97a8b92732","type":"PanTool"},{"id":"88c8d9ff-3eaf-4cc4-bbd3-8a37160d111f","type":"WheelZoomTool"},{"id":"a0f2b309-f2ab-48d3-be04-ee2fad3ef193","type":"BoxZoomTool"},{"id":"469cf38a-199b-430a-af96-c4da5bcd7321","type":"SaveTool"},{"id":"627cb4cb-4ab7-4e8d-988c-42e1f2a26686","type":"ResetTool"},{"id":"deba27e3-6bdc-4fa1-aef9-b4d9578a0b69","type":"HelpTool"},{"id":"5c488db4-f010-4d86-a038-307586a8ab8c","type":"HoverTool"}]},"id":"ca7b8ccc-41c6-4602-a733-9f8e03e31eac","type":"Toolbar"},{"attributes":{},"id":"469cf38a-199b-430a-af96-c4da5bcd7321","type":"SaveTool"},{"attributes":{"callback":null,"factors":["Nathan_Peterman","Jimmy_Garoppolo","Matthew_Stafford","Derek_Carr","Matt_Ryan","Blaine_Gabbert","Deshaun_Watson","Ben_Roethlisberger","Dak_Prescott","Sam_Bradford","Nick_Foles","Mitchell_Trubisky","Eli_Manning","Josh_Allen","Ryan_Tannehill","Marcus_Mariota","Russell_Wilson","Blake_Bortles","Tyrod_Taylor","Aaron_Rodgers","Case_Keenum","Cam_Newton","Philip_Rivers","Kirk_Cousins","Jared_Goff","Andy_Dalton","Andrew_Luck","Patrick_Mahomes","Alex_Smith","Sam_Darnold","Tom_Brady","Joe_Flacco","Drew_Brees","Ryan_Fitzpatrick"]},"id":"c74944bd-f9c2-4168-a1de-6b9f49b1c675","type":"FactorRange"},{"attributes":{},"id":"2a6d29ad-ebc4-4ad7-b24f-9820fc553453","type":"LinearScale"},{"attributes":{},"id":"a0b93bf7-9fe8-4b84-b2d4-65e245e8befb","type":"Selection"},{"attributes":{"plot":{"id":"e619e2b7-83ce-4175-8994-6a9cf70e2e4c","subtype":"Figure","type":"Plot"},"ticker":{"id":"b60c933a-5394-4fc1-bb68-cde0a7cb2eca","type":"BasicTicker"}},"id":"cd5c6da5-e0dc-4d75-a58f-99c80a06b635","type":"Grid"},{"attributes":{"dimension":1,"plot":{"id":"e619e2b7-83ce-4175-8994-6a9cf70e2e4c","subtype":"Figure","type":"Plot"},"ticker":{"id":"0ea14cc7-1c16-4bee-8c1e-1ae48214b3b0","type":"CategoricalTicker"}},"id":"ea410fb0-7ce9-4116-883f-29f323c1dbef","type":"Grid"},{"attributes":{"callback":null,"renderers":"auto","tooltips":[["raw qbr","@raw_qbr"]]},"id":"5c488db4-f010-4d86-a038-307586a8ab8c","type":"HoverTool"},{"attributes":{},"id":"d4fc2d8b-242b-4118-b1ae-88c4879fdbb3","type":"CategoricalScale"},{"attributes":{},"id":"b35ad4b8-2b85-47fc-89fc-3df4cafd6465","type":"CategoricalTickFormatter"},{"attributes":{},"id":"b60c933a-5394-4fc1-bb68-cde0a7cb2eca","type":"BasicTicker"},{"attributes":{},"id":"dae2cbb8-bb72-40a2-8cac-ce077c55589e","type":"UnionRenderers"},{"attributes":{"axis_label":"raw_qbr","formatter":{"id":"28250106-e784-499d-a92d-480964a999c3","type":"BasicTickFormatter"},"plot":{"id":"e619e2b7-83ce-4175-8994-6a9cf70e2e4c","subtype":"Figure","type":"Plot"},"ticker":{"id":"b60c933a-5394-4fc1-bb68-cde0a7cb2eca","type":"BasicTicker"}},"id":"2c7df9de-dfee-4579-abaf-b812780b2555","type":"LinearAxis"},{"attributes":{},"id":"0ea14cc7-1c16-4bee-8c1e-1ae48214b3b0","type":"CategoricalTicker"},{"attributes":{},"id":"deba27e3-6bdc-4fa1-aef9-b4d9578a0b69","type":"HelpTool"},{"attributes":{},"id":"28250106-e784-499d-a92d-480964a999c3","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"b35ad4b8-2b85-47fc-89fc-3df4cafd6465","type":"CategoricalTickFormatter"},"plot":{"id":"e619e2b7-83ce-4175-8994-6a9cf70e2e4c","subtype":"Figure","type":"Plot"},"ticker":{"id":"0ea14cc7-1c16-4bee-8c1e-1ae48214b3b0","type":"CategoricalTicker"}},"id":"32251071-eeda-4c0b-ae41-816bb8b9dbeb","type":"CategoricalAxis"},{"attributes":{"source":{"id":"7c00444a-4380-4ed7-ae70-6ea530e7006e","type":"ColumnDataSource"}},"id":"307d8dd9-deae-4df4-a373-51468e4cdf0a","type":"CDSView"},{"attributes":{"plot":null,"text":"ESPN Week 1 Raw QBR"},"id":"a24d85a4-2943-47f6-8398-565b44c1c7bf","type":"Title"},{"attributes":{"below":[{"id":"2c7df9de-dfee-4579-abaf-b812780b2555","type":"LinearAxis"}],"left":[{"id":"32251071-eeda-4c0b-ae41-816bb8b9dbeb","type":"CategoricalAxis"}],"renderers":[{"id":"2c7df9de-dfee-4579-abaf-b812780b2555","type":"LinearAxis"},{"id":"cd5c6da5-e0dc-4d75-a58f-99c80a06b635","type":"Grid"},{"id":"32251071-eeda-4c0b-ae41-816bb8b9dbeb","type":"CategoricalAxis"},{"id":"ea410fb0-7ce9-4116-883f-29f323c1dbef","type":"Grid"},{"id":"9ecb9c8c-36c1-465a-ab4f-10a426852031","type":"BoxAnnotation"},{"id":"88991241-b325-450e-a97d-8bf661b99c4e","type":"GlyphRenderer"}],"title":{"id":"a24d85a4-2943-47f6-8398-565b44c1c7bf","type":"Title"},"toolbar":{"id":"ca7b8ccc-41c6-4602-a733-9f8e03e31eac","type":"Toolbar"},"x_range":{"id":"b2acd94c-47d1-47e4-87bf-37168697aa42","type":"DataRange1d"},"x_scale":{"id":"2a6d29ad-ebc4-4ad7-b24f-9820fc553453","type":"LinearScale"},"y_range":{"id":"c74944bd-f9c2-4168-a1de-6b9f49b1c675","type":"FactorRange"},"y_scale":{"id":"d4fc2d8b-242b-4118-b1ae-88c4879fdbb3","type":"CategoricalScale"}},"id":"e619e2b7-83ce-4175-8994-6a9cf70e2e4c","subtype":"Figure","type":"Plot"}],"root_ids":["e619e2b7-83ce-4175-8994-6a9cf70e2e4c"]},"title":"Bokeh Application","version":"0.13.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('41f846bf-7e66-4cb6-bfc1-47e2efbdb984').textContent;
+                  var render_items = [{"docid":"1857d9ee-0781-42ee-8668-18d2aada4830","roots":{"e619e2b7-83ce-4175-8994-6a9cf70e2e4c":"25454388-dd7b-446a-8129-20fa3abda46c"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

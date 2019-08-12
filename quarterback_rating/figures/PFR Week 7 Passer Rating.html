@@ -1,0 +1,83 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            <div class="bk-root" id="ed3efb73-5a19-4bd2-b3cc-577a8e15b716"></div>
+          
+        
+      
+      
+        <script type="application/json" id="8639fb58-b46e-4d12-bfec-708ab77585e3">
+          {"c369bc03-c159-42c9-974b-f4266b3c7e75":{"roots":{"references":[{"attributes":{"fill_color":{"field":"is_shit","transform":{"id":"4bf5c89d-2f43-497a-b0d7-6b4b60ccaa85","type":"CategoricalColorMapper"}},"height":{"value":0.8},"line_color":{"field":"is_shit","transform":{"id":"4bf5c89d-2f43-497a-b0d7-6b4b60ccaa85","type":"CategoricalColorMapper"}},"right":{"field":"passer_rating"},"y":{"field":"player"}},"id":"e418cd1c-e870-4f8c-8e81-d7bb19ec827d","type":"HBar"},{"attributes":{"source":{"id":"7067ee68-ff03-4ce6-954d-4e0464985fa0","type":"ColumnDataSource"}},"id":"c7c82700-bf1a-432b-a317-f2c56c8ff521","type":"CDSView"},{"attributes":{},"id":"eab2c93b-fb78-4d52-8309-73d973808572","type":"Selection"},{"attributes":{},"id":"72696b65-e369-4249-9526-f9d774b33f28","type":"LinearScale"},{"attributes":{"plot":null,"text":"PFR Week 7 Passer Rating"},"id":"9c1195b7-e106-4476-9375-282f62b87ac1","type":"Title"},{"attributes":{"callback":null,"factors":["Sam Darnold","Derek Anderson","Josh Rosen","C.J. Beathard","Andy Dalton","Blake Bortles","Jameis Winston","Mitchell Trubisky","Cody Kessler","Deshaun Watson","Case Keenum","Alex Smith","Marcus Mariota","Kirk Cousins","Dak Prescott","Joe Flacco","Cam Newton","Baker Mayfield","Jeff Driskel","Tom Brady","Eli Manning","Brock Osweiler","Drew Brees","Matt Ryan","Carson Wentz","Patrick Mahomes","Jared Goff","Andrew Luck","Philip Rivers","Matthew Stafford"]},"id":"86a556b9-e42d-475e-ab8a-79819ce7adf8","type":"FactorRange"},{"attributes":{},"id":"990bbaba-7abc-4c1e-a8d4-a18b77356190","type":"CategoricalTickFormatter"},{"attributes":{},"id":"e11ab6ab-9c4c-4817-a2d2-6c85a8f3ab46","type":"UnionRenderers"},{"attributes":{"axis_label":"passer_rating","formatter":{"id":"d0974bb8-48f3-4247-b8b6-5ec708181150","type":"BasicTickFormatter"},"plot":{"id":"4b1e65dc-ff7e-4d7e-b164-e6a39793b66e","subtype":"Figure","type":"Plot"},"ticker":{"id":"fddda062-04f2-4335-967b-07093ce4c7a5","type":"BasicTicker"}},"id":"02fb35f5-2a7d-4645-b07c-7c58989d2166","type":"LinearAxis"},{"attributes":{},"id":"c1b06af9-61b9-43e1-9d9d-51f096863e83","type":"CategoricalScale"},{"attributes":{"callback":null,"data":{"adjusted_yards_per_attempt":{"__ndarray__":"XI/C9ShcAUCkcD0K16P0Pz0K16NwPQBAmpmZmZmZDUD2KFyPwvUQQFK4HoXrURRAKVyPwvUoFUCkcD0K16MWQHsUrkfhehFAhetRuB6FGkDsUbgehesZQK5H4XoUrh9AhetRuB6FGkAfhetRuB4cQD0K16NwvSBAXI/C9ShcIECuR+F6FK4fQAAAAAAAAB5AAAAAAACAI0C4HoXrUTggQI/C9ShcDyZAAAAAAAAAIkDNzMzMzMwgQPYoXI/CdSRA7FG4HoXrIkApXI/C9SgkQClcj8L1KCRAhetRuB6FJEAfhetRuJ4qQFyPwvUoXCdA","dtype":"float64","shape":[30]},"age":{"__ndarray__":"F9nO91MjNUCq8dJNYpBBQAAAAAAAQDVAEFg5tMhWOEAIrBxaZFs+QJMYBFYOLTpAfT81XrpJOEAdWmQ73w84QH0/NV66KTlAtvP91HgJN0CR7Xw/NT4+QEw3iUFgFUFAQmDl0CJbOEDjpZvEIBA+QC/dJAaBFTlA3SQGgZWjQEB9PzVeuik9QHE9CtejMDdAdZMYBFYuOUAmMQisHIpEQEw3iUFgpUJAaJHtfD9VO0DByqFFtqNDQE5iEFg5lEBA7FG4HoVLOUBiEFg5tAg3QG8Sg8DKAThARIts5/sJPUB/arx0kyhCQKjGSzeJQT5A","dtype":"float64","shape":[30]},"away":["NaN","@","NaN","NaN","@","NaN","NaN","NaN","NaN","@","@","NaN","@","@","@","NaN","@","@","@","@","@","NaN","@","NaN","NaN","NaN","@","NaN","NaN","@"],"completion_percentage":{"__ndarray__":"PQrXo3A9REDhehSuRyFQQM3MzMzM7EpASOF6FK7HS0Bcj8L1KNxJQAAAAAAAAElAhetRuB7FTkAAAAAAAABKQAAAAAAAgFFAAAAAAAAASUB7FK5H4apQQAAAAAAAAExAAAAAAADAUkAAAAAAAEBPQK5H4XoUbk9AXI/C9Sh8TUBmZmZmZgZQQJqZmZmZ6VBAAAAAAAAAWUBcj8L1KFxRQDMzMzMzw1FArkfhehS+UUCF61G4HlVSQI/C9Shc31NAhetRuB5FVEDD9Shcj/JRQAAAAAAAwFJACtejcD16UkCF61G4HkVSQBSuR+F6dFRA","dtype":"float64","shape":[30]},"date":["2018-10-21","2018-10-21","2018-10-18","2018-10-21","2018-10-21","2018-10-21","2018-10-21","2018-10-21","2018-10-21","2018-10-21","2018-10-18","2018-10-21","2018-10-21","2018-10-21","2018-10-21","2018-10-21","2018-10-21","2018-10-21","2018-10-21","2018-10-21","2018-10-22","2018-10-21","2018-10-21","2018-10-22","2018-10-21","2018-10-21","2018-10-21","2018-10-21","2018-10-21","2018-10-21"],"day":["Sun","Sun","Thu","Sun","Sun","Sun","Sun","Sun","Sun","Sun","Thu","Sun","Sun","Sun","Sun","Sun","Sun","Sun","Sun","Sun","Mon","Sun","Sun","Mon","Sun","Sun","Sun","Sun","Sun","Sun"],"game_number":[7,7,7,7,7,7,6,6,7,7,7,6,7,7,7,7,6,7,7,7,7,7,6,7,7,7,7,7,7,6],"index":[242,241,240,239,238,237,236,235,234,233,232,230,229,228,227,226,225,224,223,222,221,220,219,218,217,216,215,214,213,212],"interceptions":[3,3,3,2,1,0,2,2,1,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0],"is_shit":["Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dalton","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Dog Shit","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent","Decent"],"league":["NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL","NFL"],"opponent":["MIN","IND","DEN","LAR","KAN","HOU","CLE","NWE","HOU","JAX","ARI","DAL","LAC","NYJ","WAS","NOR","PHI","TAM","KAN","CHI","ATL","DET","BAL","NYG","CAR","CIN","SFO","BUF","TEN","MIA"],"passer_rating":{"__ndarray__":"MzMzMzMzQUBmZmZmZuZDQJqZmZmZGUZAzczMzMwMTEDNzMzMzMxPQJqZmZmZOVBAZmZmZmamUEAzMzMzM3NRQDMzMzMz01NAMzMzMzNzVEBmZmZmZmZVQM3MzMzM7FZAMzMzMzMzV0CamZmZmflXQAAAAAAAIFhAZmZmZmaGWEAzMzMzM1NZQJqZmZmZGVpAMzMzMzPTWkDNzMzMzAxbQDMzMzMzc1xAmpmZmZm5XECamZmZmblcQM3MzMzM7FxAZmZmZmbmXUDNzMzMzOxeQJqZmZmZ2V9AAAAAAABwYEBmZmZmZjZhQDMzMzMzQ2FA","dtype":"float64","shape":[30]},"passes_attempted":[42,31,39,27,29,12,52,50,30,24,21,25,32,40,35,39,39,34,4,36,38,31,30,39,37,39,24,23,26,22],"passes_completed":[17,20,21,15,15,6,32,26,21,12,14,14,24,25,22,23,25,23,4,25,27,22,22,31,30,28,18,17,19,18],"passing_touchdowns":[1,0,1,1,1,0,0,2,1,1,1,1,1,2,1,2,2,2,0,3,1,2,2,1,2,4,2,4,2,2],"player":["Sam Darnold","Derek Anderson","Josh Rosen","C.J. Beathard","Andy Dalton","Blake Bortles","Jameis Winston","Mitchell Trubisky","Cody Kessler","Deshaun Watson","Case Keenum","Alex Smith","Marcus Mariota","Kirk Cousins","Dak Prescott","Joe Flacco","Cam Newton","Baker Mayfield","Jeff Driskel","Tom Brady","Eli Manning","Brock Osweiler","Drew Brees","Matt Ryan","Carson Wentz","Patrick Mahomes","Jared Goff","Andrew Luck","Philip Rivers","Matthew Stafford"],"pos":["QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB","QB"],"result":["L 17-37","L 5-37","L 10-45","L 10-39","L 10-45","L 7-20","W 26-23","L 31-38","L 7-20","W 20-7","W 45-10","W 20-17","L 19-20","W 37-17","L 17-20","L 23-24","W 21-17","L 23-26","L 10-45","W 38-31","L 20-23","L 21-32","W 24-23","W 23-20","L 17-21","W 45-10","W 39-10","W 37-5","W 20-19","W 32-21"],"sacks_taken":{"__ndarray__":"AAAAAAAACEAAAAAAAAAAQAAAAAAAABhAAAAAAAAAHEAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAQAAAAAAAABBAAAAAAAAA8D8AAAAAAAAAQAAAAAAAAPA/AAAAAAAAAEAAAAAAAADwPwAAAAAAABBAAAAAAAAA8D8AAAAAAAAAQAAAAAAAABRAAAAAAAAAAAAAAAAAAADwPwAAAAAAABBAAAAAAAAAEEAAAAAAAADwPwAAAAAAAAhAAAAAAAAAEEAAAAAAAAAAQAAAAAAAAPA/AAAAAAAAAAAAAAAAAAAAQAAAAAAAAPA/","dtype":"float64","shape":[30]},"team":["NYJ","BUF","ARI","SFO","CIN","JAX","TAM","CHI","JAX","HOU","DEN","WAS","TEN","MIN","DAL","BAL","CAR","CLE","CIN","NWE","NYG","MIA","NOR","ATL","PHI","KAN","LAR","IND","LAC","DET"],"week":[7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],"yards_from_passing":[206,175,194,170,148,61,365,333,156,139,161,178,237,241,273,279,269,215,39,277,399,239,212,379,310,358,202,156,306,217],"yards_lost_to_sacks":{"__ndarray__":"AAAAAAAALEAAAAAAAAAcQAAAAAAAAERAAAAAAACASEAAAAAAAAAqQAAAAAAAAAAAAAAAAAAAN0AAAAAAAAAsQAAAAAAAADxAAAAAAAAAIEAAAAAAAAAmQAAAAAAAAAhAAAAAAAAAJkAAAAAAAAAqQAAAAAAAADdAAAAAAAAAJEAAAAAAAAAzQAAAAAAAAD1AAAAAAAAAAAAAAAAAAAAQQAAAAAAAADtAAAAAAAAAOEAAAAAAAAAcQAAAAAAAADdAAAAAAAAAOkAAAAAAAAAUQAAAAAAAACJAAAAAAAAAAAAAAAAAAAAiQAAAAAAAACBA","dtype":"float64","shape":[30]},"yards_per_attempt":{"__ndarray__":"mpmZmZmZE0CamZmZmZkWQOF6FK5H4RNAMzMzMzMzGUBmZmZmZmYUQFK4HoXrURRAFK5H4XoUHECkcD0K16MaQM3MzMzMzBRAKVyPwvUoF0CuR+F6FK4eQHsUrkfhehxApHA9CtejHUAfhetRuB4YQDMzMzMzMx9AmpmZmZmZHECamZmZmZkbQEjhehSuRxlAAAAAAACAI0DD9Shcj8IeQAAAAAAAACVA16NwPQrXHkBI4XoUrkccQHE9CtejcCNAw/UoXI/CIEBcj8L1KFwiQNejcD0K1yBAH4XrUbgeG0AK16NwPYonQLgehetRuCNA","dtype":"float64","shape":[30]}},"selected":{"id":"eab2c93b-fb78-4d52-8309-73d973808572","type":"Selection"},"selection_policy":{"id":"e11ab6ab-9c4c-4817-a2d2-6c85a8f3ab46","type":"UnionRenderers"}},"id":"7067ee68-ff03-4ce6-954d-4e0464985fa0","type":"ColumnDataSource"},{"attributes":{},"id":"fddda062-04f2-4335-967b-07093ce4c7a5","type":"BasicTicker"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"077710da-8e34-42d7-91c2-390a521c102d","type":"BoxAnnotation"},{"attributes":{},"id":"d0974bb8-48f3-4247-b8b6-5ec708181150","type":"BasicTickFormatter"},{"attributes":{"overlay":{"id":"077710da-8e34-42d7-91c2-390a521c102d","type":"BoxAnnotation"}},"id":"e7946056-d370-4e25-a404-03dbfe4a9f69","type":"BoxZoomTool"},{"attributes":{"below":[{"id":"02fb35f5-2a7d-4645-b07c-7c58989d2166","type":"LinearAxis"}],"left":[{"id":"ddbc71a0-60d1-421c-9b2e-54720b824ef5","type":"CategoricalAxis"}],"renderers":[{"id":"02fb35f5-2a7d-4645-b07c-7c58989d2166","type":"LinearAxis"},{"id":"88df74d8-d7b2-40fd-a1fb-7f687b418aec","type":"Grid"},{"id":"ddbc71a0-60d1-421c-9b2e-54720b824ef5","type":"CategoricalAxis"},{"id":"1c204b49-5714-44b7-a869-7e98ac3a0b81","type":"Grid"},{"id":"077710da-8e34-42d7-91c2-390a521c102d","type":"BoxAnnotation"},{"id":"9ff4a491-9e60-4703-bfc9-347ba99b14d0","type":"GlyphRenderer"}],"title":{"id":"9c1195b7-e106-4476-9375-282f62b87ac1","type":"Title"},"toolbar":{"id":"3544b430-e894-48a2-a114-d15b31d25fef","type":"Toolbar"},"x_range":{"id":"80d41a5c-82a9-4188-9f27-47a46c923192","type":"DataRange1d"},"x_scale":{"id":"72696b65-e369-4249-9526-f9d774b33f28","type":"LinearScale"},"y_range":{"id":"86a556b9-e42d-475e-ab8a-79819ce7adf8","type":"FactorRange"},"y_scale":{"id":"c1b06af9-61b9-43e1-9d9d-51f096863e83","type":"CategoricalScale"}},"id":"4b1e65dc-ff7e-4d7e-b164-e6a39793b66e","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"b04765d5-d83f-4acd-a397-15a7ee3cfce0","type":"PanTool"},{"attributes":{},"id":"bd2d3624-7f56-4c08-857d-66af184f53ee","type":"WheelZoomTool"},{"attributes":{"callback":null},"id":"80d41a5c-82a9-4188-9f27-47a46c923192","type":"DataRange1d"},{"attributes":{"formatter":{"id":"990bbaba-7abc-4c1e-a8d4-a18b77356190","type":"CategoricalTickFormatter"},"plot":{"id":"4b1e65dc-ff7e-4d7e-b164-e6a39793b66e","subtype":"Figure","type":"Plot"},"ticker":{"id":"ee61dc99-55c1-40bf-9bf3-099fe9390fcb","type":"CategoricalTicker"}},"id":"ddbc71a0-60d1-421c-9b2e-54720b824ef5","type":"CategoricalAxis"},{"attributes":{"dimension":1,"plot":{"id":"4b1e65dc-ff7e-4d7e-b164-e6a39793b66e","subtype":"Figure","type":"Plot"},"ticker":{"id":"ee61dc99-55c1-40bf-9bf3-099fe9390fcb","type":"CategoricalTicker"}},"id":"1c204b49-5714-44b7-a869-7e98ac3a0b81","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"value":0.8},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"right":{"field":"passer_rating"},"y":{"field":"player"}},"id":"06b52516-46c3-4a84-82c5-3e7b4797f0f7","type":"HBar"},{"attributes":{},"id":"e201dbcc-35fb-464e-bd0a-a47a4853bb4a","type":"SaveTool"},{"attributes":{"factors":["Dalton","Decent","Dog Shit"],"palette":["#7fc97f","#beaed4","#fdc086","#ffff99","#386cb0"]},"id":"4bf5c89d-2f43-497a-b0d7-6b4b60ccaa85","type":"CategoricalColorMapper"},{"attributes":{},"id":"8d12e160-c074-4632-b397-a8e78f5d986c","type":"HelpTool"},{"attributes":{},"id":"ee61dc99-55c1-40bf-9bf3-099fe9390fcb","type":"CategoricalTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"b04765d5-d83f-4acd-a397-15a7ee3cfce0","type":"PanTool"},{"id":"bd2d3624-7f56-4c08-857d-66af184f53ee","type":"WheelZoomTool"},{"id":"e7946056-d370-4e25-a404-03dbfe4a9f69","type":"BoxZoomTool"},{"id":"e201dbcc-35fb-464e-bd0a-a47a4853bb4a","type":"SaveTool"},{"id":"ec8cc0e8-4a46-4c35-afab-22801b5d26dd","type":"ResetTool"},{"id":"8d12e160-c074-4632-b397-a8e78f5d986c","type":"HelpTool"},{"id":"0d0bb0df-bffe-4737-87a7-ac36b28e395f","type":"HoverTool"}]},"id":"3544b430-e894-48a2-a114-d15b31d25fef","type":"Toolbar"},{"attributes":{"callback":null,"renderers":"auto","tooltips":[["passer rating","@passer_rating"]]},"id":"0d0bb0df-bffe-4737-87a7-ac36b28e395f","type":"HoverTool"},{"attributes":{"plot":{"id":"4b1e65dc-ff7e-4d7e-b164-e6a39793b66e","subtype":"Figure","type":"Plot"},"ticker":{"id":"fddda062-04f2-4335-967b-07093ce4c7a5","type":"BasicTicker"}},"id":"88df74d8-d7b2-40fd-a1fb-7f687b418aec","type":"Grid"},{"attributes":{},"id":"ec8cc0e8-4a46-4c35-afab-22801b5d26dd","type":"ResetTool"},{"attributes":{"data_source":{"id":"7067ee68-ff03-4ce6-954d-4e0464985fa0","type":"ColumnDataSource"},"glyph":{"id":"e418cd1c-e870-4f8c-8e81-d7bb19ec827d","type":"HBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"06b52516-46c3-4a84-82c5-3e7b4797f0f7","type":"HBar"},"selection_glyph":null,"view":{"id":"c7c82700-bf1a-432b-a317-f2c56c8ff521","type":"CDSView"}},"id":"9ff4a491-9e60-4703-bfc9-347ba99b14d0","type":"GlyphRenderer"}],"root_ids":["4b1e65dc-ff7e-4d7e-b164-e6a39793b66e"]},"title":"Bokeh Application","version":"0.13.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('8639fb58-b46e-4d12-bfec-708ab77585e3').textContent;
+                  var render_items = [{"docid":"c369bc03-c159-42c9-974b-f4266b3c7e75","roots":{"4b1e65dc-ff7e-4d7e-b164-e6a39793b66e":"ed3efb73-5a19-4bd2-b3cc-577a8e15b716"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

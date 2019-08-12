@@ -15,7 +15,7 @@ for (i in number_of_weeks) {
   
   g1 <- ggplot(df.sorted) +
     geom_histogram(aes(raw_qbr), bins = 12) + 
-    xlab('Total Quarterback Rating') + ggtitle(paste('ESPN Week', i, 'distribution'))
+    xlab('Raw Quarterback Rating') + ggtitle(paste('ESPN Week', i, 'distribution'))
   ggsave(paste('results', paste(first.name, '.png', sep = ''), sep = '/'),
          plot = g1, width = 4, height = 3)
   
@@ -23,7 +23,7 @@ for (i in number_of_weeks) {
     geom_bar(aes(x = reorder(player, raw_qbr), raw_qbr, fill = is_shit),
              stat = 'identity') + 
     coord_flip() + 
-    xlab('Total Quarterback Rating') + ggtitle(paste('ESPN Week', i, 'ratings'))
+    xlab('Raw Quarterback Rating') + ggtitle(paste('ESPN Week', i, 'ratings'))
   ggsave(paste('results', paste(second.name, '.png', sep = ''), sep = '/'),
          plot = g2, width = 5, height = 7)
 }
