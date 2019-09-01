@@ -4,8 +4,12 @@ import pandas as pd
 from bs4 import BeautifulSoup
 
 
-def scrape_website(url):
-    """Provides a soup object given a url"""
+def clean_player_name(name):
+    return name.replace('*', '').replace('+', '')
+
+
+def scrape_table(url):
+    """Provides a soup object for the first table seen"""
 
     page = requests.get(url)
 
@@ -20,20 +24,22 @@ def parse_data_table(table):
     """parse a bs4 soup table"""
 
     header = table.find('thead')
+
     columns = [column.attrs.get('data-stat') for column in header.find_all('th')]
 
-    relevant_columns = columns[columns.index('player'):]
+    column_index = columns.index('player') if 'player' in columns else columns.index('team')
+
+    relevant_columns = columns[column_index:]
 
     body = table.find('tbody')
 
     players = []
     for row in body.find_all('tr'):
 
-        # TODO treat string fields before loading into Pandas
-        player = [column.get_text() for column in row.find_all('td')]
+        data = [clean_player_name(column.get_text()) for column in row.find_all('td')]
 
-        if player:
-            players.append(player)
+        if data:
+            players.append(data)
 
     data_frame = pd.DataFrame(players, columns=relevant_columns)
 
@@ -44,8 +50,8 @@ if __name__ == '__main__':
     passing = 'https://www.pro-football-reference.com/years/2018/passing.htm'
     rushing = 'https://www.pro-football-reference.com/years/2018/rushing.htm'
     receiving = 'https://www.pro-football-reference.com/years/2018/receiving.htm'
+    team_defense = 'https://www.pro-football-reference.com/years/2018/opp.htm'
     fantasy = 'https://www.pro-football-reference.com/years/2018/fantasy.htm'
 
-    for url in (passing, rushing, receiving, fantasy):
-        dt = scrape_website(url)
-        parse_data_table(dt)
+    for url in (passing, rushing, receiving, team_defense, fantasy):
+        print(parse_data_table(scrape_website(url)))
