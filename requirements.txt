@@ -22,4 +22,4 @@ scipy==1.1.0
 seaborn==0.9.0
 six==1.11.0
 tornado==5.1.1
-urllib3==1.23
+urllib3==1.26.5
